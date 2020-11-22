@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/main.css">
+  <title>Simple Home - Restaurant</title>
+</head>
+<body>
+  <main id="main-container">
+    <!-- Header -->
+    <header id="main-header" class="py-2">
+      <div class="container">
+        <h1 id="brand" class="m-heading">
+          Simple House <p>new restaurant template</p>
+        </h1>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Section: A -->
+    <section id="sec-a" class="py-3">
+      <div class="container">
+        <h1 class="sec-title text-center">Contact Page</h1>
+        <p class="lead text-center">You may use <a href="#">Simple Contact Form</a> to send email to your inbox. You can modify and use this template for your website. Header image has a parallax effect. Total 3 HTML pages included in this template.</p>
+
+        <div class="form-info py-3">
+          <form>
+            <div class="form-group">
+              <input type="text" placeholder="Name">
+            </div>
+            <div class="form-group">
+              <input type="email" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <textarea placeholder="Message"></textarea>
+            </div>
+            <input type="submit" value="Send" class="btn-main current">
+          </form>
+          <div class="f-info">
+            <h4>Our Address</h4>
+            <p>180 Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus 10550</p>
+            <p>
+              <i class="fas fa-phone"></i> 080-090-0110
+            </p>
+            <p>
+              <i class="fas fa-envelope"></i> info@company.co
+            </p>
+            <ul>
+              <li>
+                <a href="#">
+                  <i class="fab fa-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="map">
+          <!-- JavaScript Map -->
+        </div>
+
+        <div class="faq py-3">
+          <h1 class="sec-title text-center">FAQ</h1>
+          <p class="lead text-center">This section comes with Accordion tabs for different questions and answers about Simple House HTML CSS template. Thank you. #666</p>
+
+          <ul>
+            <li>
+              <a class="dropdown-link-1"><p>1. Fusce eu lorem et dui #09C maximus varius?</p> <i class="far fa-arrow-alt-circle-left"></i></a>
+              <div class="downmenu-1 hide">
+                #666 Duis blandit purus vel nenenatis rutrum. Pellentesque pellentesque tindicunt lorem, ac egestas massa sollicitudin vel. Nam scelerisque vulputate quam mollis pretium. Morbi condimentum volutpat.
+              </div>
+            </li>
+            <li>
+              <a class="dropdown-link-2"><p>2. Fusce eu lorem et dui #09C maximus varius?</p> <i class="far fa-arrow-alt-circle-left"></i></a>
+              <div class="downmenu-2 hide">
+                #666 Duis blandit purus vel nenenatis rutrum. Pellentesque pellentesque tindicunt lorem, ac egestas massa sollicitudin vel. Nam scelerisque vulputate quam mollis pretium. Morbi condimentum volutpat.
+              </div>
+            </li>
+            <li>
+              <a class="dropdown-link-3"><p>3. Fusce eu lorem et dui #09C maximus varius?</p> <i class="far fa-arrow-alt-circle-left"></i></a>
+              <div class="downmenu-3 hide">
+                #666 Duis blandit purus vel nenenatis rutrum. Pellentesque pellentesque tindicunt lorem, ac egestas massa sollicitudin vel. Nam scelerisque vulputate quam mollis pretium. Morbi condimentum volutpat.
+              </div>
+            </li>
+            <li>
+              <a class="dropdown-link-4"><p>4. Fusce eu lorem et dui #09C maximus varius?</p> <i class="far fa-arrow-alt-circle-left"></i></a>
+              <div class="downmenu-4 hide">
+                #666 Duis blandit purus vel nenenatis rutrum. Pellentesque pellentesque tindicunt lorem, ac egestas massa sollicitudin vel. Nam scelerisque vulputate quam mollis pretium. Morbi condimentum volutpat.
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        
+
+        <footer>
+          <p>Copyright &copy; 2020 Simple House | Design: <a href="#">TemplateMo</a></p>
+        </footer>
+
+      </div>
+    </section>
+
+  </main>
+  
+
+  <script>
+    // ocordion slide-down script..
+    let ddl1 = document.querySelector('.dropdown-link-1');
+    let dm1 = document.querySelector('.downmenu-1');
+    let ddl2 = document.querySelector('.dropdown-link-2');
+    let dm2 = document.querySelector('.downmenu-2');
+    let ddl3 = document.querySelector('.dropdown-link-3');
+    let dm3 = document.querySelector('.downmenu-3');
+    let ddl4 = document.querySelector('.dropdown-link-4');
+    let dm4 = document.querySelector('.downmenu-4');
+
+    ddl1.addEventListener('click', function() {
+      dm1.classList.toggle('hide');
+      dm1.classList.toggle('show');
+      console.log('done!');
+    });
+    ddl2.addEventListener('click', function() {
+      dm2.classList.toggle('hide');
+      dm2.classList.toggle('show');
+      console.log('done!');
+    });
+    ddl3.addEventListener('click', function() {
+      dm3.classList.toggle('hide');
+      dm3.classList.toggle('show');
+      console.log('done!');
+    });
+    ddl4.addEventListener('click', function() {
+      dm4.classList.toggle('hide');
+      dm4.classList.toggle('show');
+      console.log('done!');
+    });
+    
+  </script>
+</body>
+</html>

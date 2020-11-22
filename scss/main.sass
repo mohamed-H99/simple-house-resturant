@@ -1,0 +1,356 @@
+@import 'config'
+
+// Start styling here..
+// 
+// 
+  // 
+// Header
+$showcase-photo: url('../img/showcase.jpg')
+#main-header
+  position: relative
+  width: 100%
+  min-height: 80vh
+  background: url(../img/showcase.jpg) no-repeat center center/cover
+  background-attachment: fixed
+  display: flex
+  align-items: flex-end
+  justify-content: center
+  color: #fff
+  &:after
+    content: ''
+    position: absolute
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    background: linear-gradient(to top, rgba(0,0,0,0.9), transparent)
+    z-index: 0
+  & > div
+    display: flex
+    justify-content: space-between
+    align-items: center
+    position: relative
+    z-index: 10
+  #brand
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      width: 2rem
+      height: 2rem
+      background-color: #fff
+      left: -3rem
+    &:after
+      content: ''
+      position: absolute
+      width: 2rem
+      height: 2rem
+      background-color: transparent
+      border: 1px solid #fff
+      left: -2.6rem
+      bottom: 2.3rem
+    p
+      font-size: 1rem
+      font-family: $main-f
+      font-weight: 300
+      font-style: italic
+  ul
+    list-style: none
+    display: flex
+    li
+      padding: 0 1.5rem
+      a
+        text-decoration: none
+        color: #fff
+        display: inline-block
+        padding: 1rem 0
+        border-bottom: 2px solid transparent
+        transition: $ts
+        font-size: 1.1rem
+        // letter-spacing: 1px
+        &:hover
+          border-color: #fff
+
+
+// 
+  // 
+// Section: A
+// page 1 (Home)
+#sec-a
+  .btns
+    margin: 1rem 0 2rem
+  .items
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    gap: 2rem
+    row-gap: 4rem
+    .item
+      overflow: hidden
+      img
+        width: 100%
+        height: 200px
+        object-fit: cover
+      h4
+        font-size: 1.5rem
+        font-weight: 300
+        color: $alt2-c
+        margin: 1rem 0
+        cursor: pointer
+      p
+        color: $gray-c
+        line-height: 1.5
+        &.price
+          color: $main-c
+          font-size: 1.2rem
+          margin: 0.5rem 0
+
+  .last
+    margin: 4rem 0 2rem
+    display: grid
+    grid-template-columns: 1fr 1fr
+    gap: 2rem
+    img
+      width: 100%
+      display: block
+    .info
+      display: flex
+      flex-direction: column
+      align-self: center
+      h4
+        font-size: 1.7rem
+        font-weight: 300
+        color: $alt2-c
+        margin: 1rem 0
+      p
+        color: $gray-c
+        line-height: 1.7
+        word-spacing: 4px
+      a
+        align-self: flex-end
+  footer
+    text-align: center
+    p
+      color: $gray-c
+      a
+        text-decoration: none
+        transition: $ts
+        color: $gray-c
+        &:hover
+          color: $alt2-c
+
+// page 2 (About)
+#sec-a
+  .boxes
+    display: grid
+    grid-template-columns: 1fr 1fr
+    gap: 4rem
+    margin: 4.5rem 0
+    .box
+      display: grid
+      grid-template-columns: 2fr 3fr
+      gap: 2rem
+      img
+        width: 100%
+        height: 100%
+        object-fit: cover
+      .more
+        display: flex
+        flex-direction: column
+        h4
+          font-size: 1.6rem
+          font-weight: 300
+          color: $alt2-c
+          margin: 1rem 0
+        p
+          &:first-of-type
+            color: $alt-c
+            margin-bottom: 1rem
+            font-family: $header-f
+            font-size: 1.2rem
+          color: $gray-c
+          line-height: 1.5
+        ul
+          list-style: none
+          li
+            display: inline-block
+            a
+              text-decoration: none
+              color: $gray-c
+              transition: $ts
+              font-size: 1.5rem
+              display: inline-block
+              margin-right: 0.5rem
+              margin-top: 0.5rem
+              border-radius: 3px
+              text-align: center
+              width: 2rem
+              height: 2rem
+              &:hover
+                background-color: $gray-c
+                color: #fff
+  .fixed-bg
+    width: 100%
+    background: url('../img/inner.jpg') no-repeat center / cover
+    background-attachment: fixed
+    min-height: 40vh
+  
+  .shapes
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    gap: 2rem
+    margin-top: 2rem
+    padding-bottom: 0
+    .shape
+      padding: 1rem
+      text-align: center
+      i
+        font-size: 4rem
+        color: $gray-c
+        margin-bottom: 2rem
+      p
+        color: #666
+        font-weight: 300
+        line-height: 1.7
+        word-spacing: 2px
+        margin-top: 1.5rem
+      a
+        color: #fff
+        transition: $ts
+        &:hover
+          opacity: 0.7
+      &:first-child
+        a
+          background-color: $alt2-c
+      &:nth-child(2)
+        a
+          background-color: $main-c
+      &:last-child
+        a
+          background-color: $alt-c
+
+// page 3 (Contact)
+#sec-a
+  .form-info
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    gap: 4rem
+    form
+      .form-group
+        margin-bottom: 1rem
+        input, textarea
+          padding: 0.5rem 1.3rem
+          background: transparent
+          border: none
+          border-bottom: 1px solid #ccc
+          outline: none
+          font-size: 1.1rem
+          color: #666
+          width: 100%
+          max-width: 100%
+          transition: outline 0.25s
+          font-family: $main-f
+          font-weight: 300
+          &:focus
+            outline: 2px solid $alt2-c
+      input[type="submit"]
+        font-size: 1.1rem
+        transition: $ts
+        float: right
+        &:hover
+          opacity: 0.8
+    .f-info
+      h4
+        font-size: 2rem
+        color: $main-c
+        font-weight: 300
+      & > p
+        color: #666
+        line-height: 1.7
+        word-spacing: 2px
+        margin: 1.8rem 0
+        i
+          margin-right: 0.8rem
+          color: $main-c
+      ul
+        list-style: none
+        display: flex
+        li a
+          text-decoration: none
+          color: $gray-c
+          margin-right: 1rem
+          text-align: center
+          font-size: 1.5rem
+          transition: $ts
+          width: 2rem
+          height: 2rem
+          display: inline-block
+          border-radius: 5px
+          &:hover
+            color: #fff
+            background-color: $gray-c
+
+  .faq
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    width: 70%
+    margin: auto
+    ul
+      list-style: none
+      li
+        margin-bottom: 2rem
+        position: relative
+        transition: $ts
+        a
+          display: flex
+          justify-content: space-between
+          border: 1px solid $gray-c
+          align-items: center
+          min-width: 100%
+          padding: 1rem
+          margin-bottom: 0.5rem
+          p
+            transition: $ts
+            cursor: pointer
+            margin-right: 1rem
+            color: #666
+            &:hover
+              color: $main-c
+          i
+            font-size: 1.5rem
+            color: #666
+        & > div
+          transition: $ts
+          &.hide
+            position: absolute
+            opacity: 0
+            visibility: hidden
+            top: -1rem
+            // display: none
+          &.show
+            visibility: visible
+            opacity: 0.8
+            top: 0
+  .map
+    width: 90%
+    margin: auto
+    min-height: 50vh
+    background-color: #ddd
+    display: flex
+    justify-content: center
+    align-items: center
+    &:before
+      content: 'MAP'
+      font-size: 4rem
+      font-family: $header-f
+      color: #ccc
+          
+
+
+
+
+
+
+// Import mobile media query at the end
+@import 'mobile'

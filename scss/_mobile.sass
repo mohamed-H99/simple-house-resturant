@@ -1,0 +1,61 @@
+// Semi-small screens
+@media screen and ( max-width: 768px )
+  #main-container
+    width: auto
+    display: block
+  #main-header
+    & > div
+      display: grid
+      align-items: center
+      grid-template-columns: 1fr
+      justify-content: center
+    #brand
+      margin: auto
+      text-align: center
+      margin-bottom: 2rem
+    ul
+      margin: auto
+
+  // Page 1
+  #sec-a
+    .items
+      grid-template-columns: repeat(2, 1fr)
+    .last
+      grid-template-columns: 1fr
+      border-top: 1px solid #ddd
+      gap: 0
+  // Page 2
+  #sec-a
+    .boxes
+      grid-template-columns: 1fr
+    .shapes
+      grid-template-columns: 1fr
+
+
+
+
+
+
+// Small & narrow screens
+@media screen and ( max-width: 501px )
+  .lead
+    font-size: 1rem
+    width: 100%
+  // Page 1
+  #sec-a
+    .items
+      grid-template-columns: 1fr !important
+    .boxes
+      .box
+        grid-template-columns: 1fr
+        gap: 0
+        img
+          height: auto
+    .last
+      gap: 0
+    .form-info
+      grid-template-columns: 1fr
+      
+  
+
+

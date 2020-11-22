@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Roboto:wght@300;400&display=swap');
+// Vars
+$header-f: 'Roboto', sans-serif; // 300 -400
+$main-f: 'Noto Sans JP', sans-serif; // 300 (only)
+
+$main-c: #1ABC9C;
+$alt-c: #C0392B;
+$alt2-c: #2E86C1;
+$dark-c: #111;
+$gray-c: #999;
+$light-c: #f4f4f4;
+
+$ts: all ease 0.4s;
+
+// Utility
+#main-container {
+  width: 1200px;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: #fff;
+  // height: 3000px;
+}
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  // overflow: hidden;
+}
+.text-center {
+  text-align: center;
+}
+.py {
+  &-1{padding: 1rem 0;}
+  &-2{padding: 2rem 0;}
+  &-3{padding: 3rem 0;}
+}
+%btn-shared {
+  padding: 0.8rem 1.8rem;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  font-family: $header-f;
+  cursor: pointer;
+  display: inline-block;
+  margin: 2rem 0;
+}
+.btn {
+  @extend %btn-shared;
+  &-dark {
+    @extend %btn-shared;
+    background-color: $dark-c;
+    color: #fff;
+    transition: $ts;
+    &:hover {
+      background-color: #fff;
+      color: $dark-c;
+    }
+  }
+  &-main {
+    @extend %btn-shared;
+    background-color: transparent;
+    color: $main-c;
+    border: 1px solid $main-c;
+    transition: $ts;
+    &:hover, &.current {
+      background-color: $main-c;
+      color: #fff;
+    }
+  }
+  &-light {
+    @extend %btn-shared;
+    background-color: $light-c;
+    color: $gray-c;
+    border: 1px solid $gray-c;
+    transition: $ts;
+    &:hover {
+      background-color: $gray-c;
+      color: #fff;
+    }
+  }
+}
+
+.bg {
+  &-dark {
+    background-color: $dark-c;
+    color: $light-c;
+  }
+  &-light {
+    background-color: $light-c;
+    color: $gray-c;
+  }
+}
+
+.l-heading {
+  font-size: 4rem;
+}
+.m-heading {
+  font-size: 2.5rem;
+}
+
+.upper {text-transform: uppercase;}
+.lower {text-transform: lowercase;}
+
+.sec-title {
+  font-size: 2rem;
+  // font-weight: 300;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+.lead {
+  font-size: 1.1rem;
+  color: $gray-c;
+  width: 85%;
+  margin: 0 auto 2rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+h1,h2,h3,h4,h5,h6 {font-family: $header-f;}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ccc;
+  font-family: $main-f;
+  line-height: 1.4;
+  color: $dark-c;
+}
